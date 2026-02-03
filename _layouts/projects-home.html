@@ -1,0 +1,80 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% assign projects = site.projects | sort: 'date' | reverse %}
+
+<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
+<ul class="posts-list list-unstyled" role="list">
+  {% for project in projects %}
+  <li class="post-preview">
+    <article>
+
+      {%- capture thumbnail -%}
+        {% if project.thumbnail-img %}
+          {{ project.thumbnail-img }}
+        {% elsif project.cover-img %}
+          {% if project.cover-img.first %}
+            {{ project.cover-img[0].first.first }}
+          {% else %}
+            {{ project.cover-img }}
+          {% endif %}
+        {% else %}
+        {% endif %}
+      {% endcapture %}
+      {% assign thumbnail=thumbnail | strip %}
+
+      {% if site.feed_show_excerpt == false %}
+      {% if thumbnail != "" %}
+      <div class="post-image post-image-normal">
+        <a href="{{ project.url | absolute_url }}" aria-label="Thumbnail">
+          <img src="{{ thumbnail | absolute_url }}" alt="Project thumbnail">
+        </a>
+      </div>
+      {% endif %}
+      {% endif %}
+
+      <a href="{{ project.url | absolute_url }}">
+        <h2 class="post-title">{{ project.title | strip_html }}</h2>
+
+        {% if project.subtitle %}
+          <h3 class="post-subtitle">
+          {{ project.subtitle | strip_html }}
+          </h3>
+        {% endif %}
+      </a>
+
+      {% if project.author %}
+        <span>By <strong>{{ project.author | strip_html }}</strong></span>
+      {% endif %}
+
+      {% if site.feed_show_tags == true and project.tags.size > 0 %}
+        <div class="post-tags post-preview-meta">
+          {%- for tag in project.tags -%}
+            <a href="{{ '/tags' | absolute_url }}#{{- tag | slugify -}}">{{- tag -}}</a>
+            {%- unless forloop.last %}&nbsp;{% endunless -%}
+          {%- endfor -%}
+        </div>
+      {% endif %}
+
+      {% if site.feed_show_excerpt == true %}
+        <p class="post-preview-excerpt">
+          {% if project.excerpt %}
+            {{ project.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
+          {% endif %}
+        </p>
+      {% endif %}
+
+      {% if project.date %}
+        <p class="post-preview-meta">
+          <span class="post-preview-date">
+            Published: {{ project.date | date: site.date_format }}
+          </span>
+        </p>
+      {% endif %}
+    </article>
+  </li>
+  {% endfor %}
+</ul>
