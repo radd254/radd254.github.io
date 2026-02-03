@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2024-02-01
 title: SIEM Home Lab 2 - Logging & Monitoring with Splunk Enterprise + OpenVAS
 subtitle: Lab report on setting up a mini SIEM with Splunk Enterprise to collect logs from Apache web server and Windows endpoints, integrated with OpenVAS for vulnerability management.
 tags: [siem, splunk, logging, monitoring, openvas, home-lab]
