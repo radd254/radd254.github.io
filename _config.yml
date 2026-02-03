@@ -50,7 +50,6 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "dathn.254@gmail.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
   facebook: dathn.2510
   github: radd254
   youtube: "@dathn4"
