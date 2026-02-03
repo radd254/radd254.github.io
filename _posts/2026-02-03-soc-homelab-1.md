@@ -1,6 +1,5 @@
 ---
 layout: post
-date: 2024-01-15
 title: SOC Home Lab 1 - Setting up the environment
 subtitle: Setting up the environment for the lab!
 tags: [soc, splunk, ubuntu, fortigate, firewall]
