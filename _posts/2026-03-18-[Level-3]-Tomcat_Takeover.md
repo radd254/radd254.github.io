@@ -50,7 +50,7 @@ Bên cạnh đó mình có search xem những port nào mở thì thấy chỉ c
 
 ### Q2: Based on the identified IP address associated with the attacker, can you identify the country from which the attacker's activities originated?
 
-Từ địa chỉ IP `14.0.0.120` mình tra cứu trên trang sau để lấy thông tin địa lý  {%preview https://www.geolocation.com/?ip=14.0.0.120#ipresult %}
+Từ địa chỉ IP `14.0.0.120` mình tra cứu trên trang sau để lấy thông tin địa lý [geolocation](https://www.geolocation.com/?ip=14.0.0.120#ipresult)
 
 Kết quả trả về IP này có địa điểm tại **China**
 ![image](https://hackmd.io/_uploads/H1VH0UHFZg.png)

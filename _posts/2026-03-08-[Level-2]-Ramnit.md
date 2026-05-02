@@ -381,7 +381,8 @@ Sau đó mình dùng lệnh `sha1sum` để tính hash và thu được chuỗi 
 
 
 Đã có được hash vậy mình sẽ tra cứu trên VirusTotal để tìm hiểu thêm
-{%preview https://www.virustotal.com/gui/file/1ac890f5fa78c857de42a112983357b0892537b73223d7ec1e1f43f8fc6b7496/detection %}
+[VirusTotal detection report](https://www.virustotal.com/gui/file/1ac890f5fa78c857de42a112983357b0892537b73223d7ec1e1f43f8fc6b7496/detection)
+
 
 ![image](https://hackmd.io/_uploads/ryhX6QHtWe.png)
 
