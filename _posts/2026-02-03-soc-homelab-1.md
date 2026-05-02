@@ -6,6 +6,7 @@ tags: [soc, splunk, ubuntu, fortigate, firewall]
 comments: true
 mathjax: true
 author: Hoàng Nguyên Đạt
+date: 2026-03-26
 ---
 # SOC-Home-Lab-1
 

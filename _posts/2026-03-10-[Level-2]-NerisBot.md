@@ -1,6 +1,5 @@
----
 title: '[Level-2]- NerisBot'
-
+date: 2026-03-10
 ---
 
 # Lab Report - NerisBot  
