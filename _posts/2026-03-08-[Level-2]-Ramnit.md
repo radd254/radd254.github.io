@@ -331,7 +331,7 @@ Qua kết quả mình thấy rằng malware đang cố kết nối tới IP `58.
 
 ### Q4: To determine the specific geographical origin of the attack, Which city is associated with the IP address the malware communicated with?
 
-Khi đã biết được IP mà malware cố gắng giao tiếp ta có thể kết luận đây chính là nơi mà hacker đặt server khởi tạo cho cuộc tấn công kế tiếp. Xác định ra được vị trí địa lý có thể giúp ích cho việc phân loại các hành vi tấn công của attacker sau này. Ở đây mình tra thông tin vị trí địa lý trên trang {%preview https://www.geolocation.com/?ip=58.64.204.181#ipresult %}.
+Khi đã biết được IP mà malware cố gắng giao tiếp ta có thể kết luận đây chính là nơi mà hacker đặt server khởi tạo cho cuộc tấn công kế tiếp. Xác định ra được vị trí địa lý có thể giúp ích cho việc phân loại các hành vi tấn công của attacker sau này. Ở đây mình tra thông tin vị trí địa lý trên trang [VirusTotal detection report](https://www.virustotal.com/gui/file/1ac890f5fa78c857de42a112983357b0892537b73223d7ec1e1f43f8fc6b7496/detection).
 
 Kết quả thu được là tại Hong Kong
 ![image](https://hackmd.io/_uploads/rJxekXBYWe.png)
